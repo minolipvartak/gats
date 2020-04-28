@@ -23,11 +23,19 @@ module.exports = {
     {
       resolve: 'gatsby-source-contentstack',
       options:{
-        'api_key': process.env.CONTENTSTACK_API_KEY,
-        'delivery_token': process.env.CONTENTSTACK_DELIVERY_TOKEN,
-        'environment': process.env.CONTENTSTACK_ENVIRONMENT
+        'api_key': 'blt1d39dc930a984d19',
+        'delivery_token': 'cse1ce19475a71dfa3dedf2a70',
+        'environment': 'production'
       },
     },
+
+    {
+      resolve: `gatsby-plugin-s3`,
+      options: {
+        bucketName: "minoli-gatsby",
+      },
+    },
+  
     'gatsby-plugin-offline',
   ],
 }
